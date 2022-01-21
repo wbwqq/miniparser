@@ -1,14 +1,12 @@
 import miniparser
 
 def view(*something):
-    """view (docstring)"""
     print(*something)
 
 def no_arg():
     print('no arg')
 
 def empty_cmd(*something):
-    print('empty command')
     print(*something)
 
 def a1(n):
