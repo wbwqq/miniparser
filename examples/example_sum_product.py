@@ -5,7 +5,7 @@ import miniparser
 # Sum of an arbitrarily long list of numbers
 def sum_num(*numbers):
     nums = [int(n) for n in numbers]
-    print(sum(list(nums)))
+    print(sum(nums))
 
 # Product of an arbitrarily long list of numbers
 def product_num(*numbers):

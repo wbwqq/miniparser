@@ -77,7 +77,7 @@ import miniparser
 # Sum of an arbitrarily long list of numbers
 def sum_num(*numbers):
     nums = [int(n) for n in numbers]
-    print(sum(list(nums)))
+    print(sum(nums))
 
 # Product of an arbitrarily long list of numbers
 def product_num(*numbers):
@@ -91,7 +91,7 @@ def product_num(*numbers):
 def echo(*args):
     print(*args)
 
-miniparser.add_command('view', echo, nargs=-1, help="echo/print arguments")
+miniparser.add_command('view', echo, nargs=-1, help='echo/print arguments')
 miniparser.add_command('sum', sum_num, nargs=-1, help='returns sum of numbers')
 miniparser.add_command('', product_num, nargs=2, help='returns product numbers')
 miniparser.parser()
