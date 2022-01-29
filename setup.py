@@ -6,7 +6,7 @@ with open('README.md', 'r', encoding='utf-8') as f:
 
 setuptools.setup(
     name='miniparser',
-    version = '0.0.7',
+    version = '0.0.8',
     author = 'wbwqq',
     description= 'A simple and easy to use python command line argument parser',
     long_description=long_description,
