@@ -6,6 +6,9 @@ Miniparser is a simple and easy to use command line argument parser for python p
 
 The goal of `miniparser` is to have a simple and easy to use command line parser for python programs. Argparse and click are fine programs but often too complicated for simple cases. Miniparser can only parse one command at a time (although this could be circumvented), but several commands can be defined. All commands can be defined to take a specific number of arguments (or all the arguments passed). Miniparser can also define the 'empty command' where no command name is specified, again with any number of arguments.
 
+
+`miniparser` can handle multiword commands.
+
 For example if a python program `example.py` has a `sum_list` function defined which prints the sum of a list of integers, using miniparser it is easy to define a command `sum` which prints the sum of all the integers passed as an argument. `python example.py sum 1 2 3 4` would print `10`. Another command `sum3` can easily be defined to print the sum of the first three integers passed as an argument (if there are more than three arguments, the other arguments are simply ignored), thus `python example.py sum3 1 2 3 4 5` prints `6`.
 
 Adding commands is easy:
